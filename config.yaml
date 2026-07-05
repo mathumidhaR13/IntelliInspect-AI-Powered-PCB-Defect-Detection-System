@@ -1,0 +1,27 @@
+preprocessing:
+  image_size: [640, 640]
+  use_grayscale: false
+  denoise_strength: 10
+  normalize_mean: [0.485, 0.456, 0.406]
+  normalize_std: [0.229, 0.224, 0.225]
+  alignment_enabled: true
+
+grid_segmentation:
+  rows: 3
+  cols: 3
+  overlap_ratio: 0.1
+
+patchcore:
+  backbone: "resnet18"
+  layers: ["layer2", "layer3"]
+  coreset_sampling_ratio: 0.1
+  num_neighbors: 9
+  image_size: [256, 256]
+  threshold: 0.5
+
+paths:
+  raw_good_dir: "dataset/raw_good"
+  processed_dir: "dataset/processed"
+  good_dir_name: "raw_good"
+  defect_dir_name: "test_defect"
+  patchcore_weights_dir: "weights"

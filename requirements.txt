@@ -1,0 +1,13 @@
+﻿torch
+torchvision
+ultralytics
+anomalib
+opencv-python
+albumentations
+numpy
+pandas
+matplotlib
+onnx
+onnxruntime
+streamlit
+pyyaml
